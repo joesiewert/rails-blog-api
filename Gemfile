@@ -5,4 +5,7 @@ gem 'pg'
 gem 'active_model_serializers', '~> 0.9.3'
 gem 'rack-cors', require: 'rack/cors'
 
-gem 'spring', group: :development
+group :development, :test do
+  gem 'spring'
+  gem 'faker'
+end
